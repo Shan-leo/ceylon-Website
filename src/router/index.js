@@ -3,6 +3,9 @@ import Home from '../views/Home.vue'
 import About from '../views/About.vue'
 import Blog from '../views/Blog.vue'
 import ContactUs from '../views/ContactUs.vue'
+import Details from '../components/Details.vue'
+
+
 
 
 const routes = [
@@ -26,6 +29,11 @@ const routes = [
     name: "ContactUs",
     component: ContactUs,
   },
+  {
+    path:"/details",
+    name:"Details",
+    component:Details,
+  }
 ];
 
 const router = createRouter({

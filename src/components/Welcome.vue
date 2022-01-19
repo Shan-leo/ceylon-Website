@@ -1,6 +1,6 @@
 <template>
   <div class="welcome">
-    <h1>Welcome To Sri Lanka</h1>
+    <span>Welcome To Sri Lanka</span>
     <img src="../assets/images/welcome.jpg" alt="" />
   </div>
 </template>
@@ -13,11 +13,38 @@ export default {
 
 <style scoped>
 .welcome {
-  margin: 0;
-  padding: 0;
+  margin: 0 ;
+  position: relative;
+  width: 100%;
 }
 
-.welcome-img {
-  width: 100vw;
+span {
+  color: white;
+  font-size: 3em;
+  width: 60%;
+  position: absolute;
+  top: 60%;
+  left: 20%;
+  margin-bottom: 1rem; 
+
+  z-index: 10;
+}
+
+img {
+  width: 100%;
+  object-fit:cover;
+  
+}
+
+@media (max-width:750px) {
+  img{
+    height:45vh ;
+  }
+
+  span {
+  color: white;
+  font-size: 1.9em;
+  z-index: 10;
+}
 }
 </style>
